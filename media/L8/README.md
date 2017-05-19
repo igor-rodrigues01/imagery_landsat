@@ -1,1 +1,1 @@
-Folder to Landsat 8 images processed
+Folder to Landsat 8 processed images
