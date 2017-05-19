@@ -4,14 +4,9 @@
 *.log
 *.pot
 *.pyc
+*.TIF
+*.tar.gz
 __pycache__/
 local_settings.py
 db.sqlite3
 
-*.pyc
-media/L8/*
-media/L7/*
-media/L5/*
-media/IMGS/L8/*
-media/IMGS/L7/
-media/IMGS/L5/
