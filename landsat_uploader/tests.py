@@ -1,3 +1,5 @@
+import os
+
 from django.test import TestCase
 from django.conf import settings
 
@@ -17,5 +19,17 @@ class LandsatImagesTest(TestCase):
 class LandsatUploaderTest(TestCase):
     """docstring for LandsatUploaderTest"""
     def setUp(self):
-        self.arg = arg
-        
+        self.uploader = LandsatUploader()
+
+    def test_get_image_name_path(self):
+        self.assertEqual(
+            self.uploader._get_image_name_path()[0]["name"],
+            "LC08_L1TP_231064_20170511_20170511_01_RT"
+        )
+        self.assertEqual(
+            self.uploader._get_image_name_path()[0]["path"],
+            os.path.join(
+                settings.LANDSAT_IMAGES_PATH, "L8",
+                "LC08_L1TP_231064_20170511_20170511_01_RT.tar.gz"
+            )
+        )
