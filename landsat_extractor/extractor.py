@@ -76,7 +76,11 @@ class LandsatExtractor():
                 tar.extract(img, path)
 
                 if self._validate_file_extracted( img, path ):
-                    extracted_files.append( {"name": img, "path": os.path.join( path, img )} )
+                    extracted_files.append({
+                        "name": img, 
+                        "path": os.path.join( path, img ), 
+                        "type": img.split(".")[0].split("_")[-1]
+                        })
                 else: 
                     raise ValueError("[ERROR] File not extracted {}".format(img))
 

@@ -38,7 +38,7 @@ class Scene(models.Model):
     row = models.CharField(max_length=3)
     sat = models.CharField(_('Satellite'), choices=sat_options, max_length=50)
     date = models.DateField(_('Date'))
-    name = models.CharField(_('Name'), max_length=21, unique=True)
+    name = models.CharField(_('Name'), max_length=255, unique=True)
     cloud_rate = models.FloatField(_('Cloud Rate'), null=True, blank=True)
     geom = models.PolygonField(srid=4326, null=True, blank=True)
     status = models.CharField(choices=status_options, max_length=50)
