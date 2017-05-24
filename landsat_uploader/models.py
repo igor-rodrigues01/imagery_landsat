@@ -66,6 +66,7 @@ class Image(models.Model):
     type = models.CharField(_('Type'), max_length=30)
     creation_date = models.DateField(_('Creation date'), auto_now_add=True)
     scene = models.ForeignKey(Scene, related_name='images')
+    path = models.CharField(max_length=100, null=True, blank=True )
 
     def __str__(self):
         return '%s' % self.name
@@ -89,3 +90,12 @@ class Image(models.Model):
     class Meta:
         verbose_name = _('Image')
         verbose_name_plural = _('Images')
+
+
+class LandsatGrade(models.Model):
+    path = models.IntegerField()
+    row = models.IntegerField()
+    geom = models.PolygonField(srid=4326)
+
+    def __str__(self):
+        return "{} - {}".format(self.path, self.row)
