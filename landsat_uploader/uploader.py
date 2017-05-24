@@ -50,7 +50,7 @@ class LandsatUploader():
         return False
 
 
-    def _create_scene(self, image_name, mtl_file=None):
+    def __create_scene(self, image_name, mtl_file=None):
         data    = get_data_from_landsat_image_name(image_name)
         geom    = self.__get_scene_geom(data["path"], data["row"])
         
@@ -75,11 +75,11 @@ class LandsatUploader():
 
         return scene[0]
 
-    def _extract_files(self, name, path):
+    def __extract_files(self, name, path):
         extract = LandsatExtractor(name=name, compressed_file=path)
         return extract.extract_files()
 
-    def _upload_files(self, files, scene):
+    def __upload_files(self, files, scene):
         images_created = []
 
         for file in files:
@@ -101,8 +101,8 @@ class LandsatUploader():
     def extract_files(self):
 
         for file in self.__get_scene_name_path():
-            files   = self._extract_files(name=file["name"], path=file["path"])
+            files   = self.__extract_files(name=file["name"], path=file["path"])
             fmtl    = self.__get_mtl_file(files)
-            scene   = self._create_scene(self, file["name"], mtl)
+            scene   = self.__create_scene(self, file["name"], mtl)
 
-            self._upload_files(files, scene)
+            self.__upload_files(files, scene)

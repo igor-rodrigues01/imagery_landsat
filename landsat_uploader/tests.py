@@ -81,7 +81,7 @@ class LandsatUploaderTest(TestCase):
         )
 
     def test_uploader_scene_creation(self):
-        scene = self.uploader._create_scene(self.scene_name)
+        scene = self.uploader._LandsatUploader__create_scene(self.scene_name)
         self.assertEqual(Scene.objects.count(), 1)
 
         created_scene = Scene.objects.get(name=self.scene_name)
@@ -97,7 +97,7 @@ class LandsatUploaderTest(TestCase):
         self.assertEqual(self.landsatGrade.geom, geometry)
 
         for file in self.uploader._LandsatUploader__get_scene_name_path():
-            scene = self.uploader._create_scene(file["name"])
+            scene = self.uploader._LandsatUploader__create_scene(file["name"])
             scene = Scene.objects.get(name=file["name"])
             self.assertEqual(scene.geom, geometry)
             self.assertEqual(scene.path, self.data["path"])
@@ -107,12 +107,12 @@ class LandsatUploaderTest(TestCase):
     def test_get_scene_extract_and_metadata(self):
 
         for file in self.uploader._LandsatUploader__get_scene_name_path():
-            files = self.uploader._extract_files(name=file["name"], path=file["path"]) # Extract files
+            files = self.uploader._LandsatUploader__extract_files(name=file["name"], path=file["path"]) # Extract files
             
             mtl_path = [mtl["path"] for mtl in files if mtl["type"].upper() =="MTL"] # Get metadata file with list_comprehension
             
-            scene = self.uploader._create_scene(file["name"], mtl_path[0]) # Creates a scene with cloud_rate 0
-            files_created = self.uploader._upload_files(files, scene) # Create images 
+            scene = self.uploader._LandsatUploader__create_scene(file["name"], mtl_path[0]) # Creates a scene with cloud_rate 0
+            files_created = self.uploader._LandsatUploader__upload_files(files, scene) # Create images 
 
             self.assertEqual( Image.objects.count(), 4  )
             self.assertEqual( len(files_created), 4     )
