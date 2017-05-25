@@ -5,11 +5,15 @@ from landsat_extractor.extractor import LandsatExtractor
 
 from .models import Scene, Image, LandsatGrade
 from .list_files import ListLandsatImages
-from .utils import get_data_from_landsat_image_name
+from .utils import get_data_image_name
 from .KeywordFinder import KeywordFinder
 
 class LandsatUploader():
-    """ LandsatUploader """
+    """ 
+    Class LandsatUploader to extract and create scene and image
+    call extract_files to get files extracted and uploaded to models
+    Could be initialized with sattelite and quiet variable
+    """
     def __init__(self, sat="L8", quiet=True):
         self.sat = sat
         self.path = os.path.join(settings.LANDSAT_IMAGES_PATH, self.sat)
@@ -17,6 +21,7 @@ class LandsatUploader():
         self.quiet = quiet
 
     def __get_cloud_cover(self, fpath, keyword):
+        """ Returns cloud cloud_cover with keywordfinder """
         try:
             finder = KeywordFinder(fpath=fpath)
             value = finder.find_keyword(key=keyword)
@@ -27,6 +32,7 @@ class LandsatUploader():
             return 0.0
 
     def __get_mtl_file(self, files):
+        """ Returns mtl file on files extracted  """
         for file in files:
             if file["type"].upper == "MTL":
                 return file["path"]
@@ -34,6 +40,7 @@ class LandsatUploader():
         raise ValueError("\t[WARN] Metadata File is not Found")
 
     def __get_scene_name_path(self):
+        """ Returns list of files from path with files  """
         return [{
             "name": file.split('.')[0], # Change to Regex 
             "path": os.path.join( self.path, file )
@@ -51,7 +58,13 @@ class LandsatUploader():
 
 
     def __create_scene(self, image_name, mtl_file=None):
-        data    = get_data_from_landsat_image_name(image_name)
+        """
+            Create Scene with image_name and metadata file
+            using get_data_image_name function from utils and 
+            geometry and cloud from self class
+            returns scene created
+        """
+        data    = get_data_image_name(image_name)
         geom    = self.__get_scene_geom(data["path"], data["row"])
         
         if mtl_file is not None:
@@ -76,10 +89,19 @@ class LandsatUploader():
         return scene[0]
 
     def __extract_files(self, name, path):
+        """
+            Extract files using LandsatExtractor
+            returns list of images extracted
+        """
         extract = LandsatExtractor(name=name, compressed_file=path)
         return extract.extract_files()
 
     def __upload_files(self, files, scene):
+        """
+            Method to create data for Image model with each file from files
+            The scene receveid as arg might be a valid scene to be used as FK
+            returns list of images created
+        """
         images_created = []
 
         for file in files:
@@ -99,10 +121,16 @@ class LandsatUploader():
         return images_created
 
     def extract_files(self):
+        """
+            This method extract files using LandsatExtractor module
+            and populate data for Image and Scene models.
+            returns tuple with scene and images created
+        """
 
         for file in self.__get_scene_name_path():
             files   = self.__extract_files(name=file["name"], path=file["path"])
             fmtl    = self.__get_mtl_file(files)
-            scene   = self.__create_scene(self, file["name"], mtl)
+            scene   = self.__create_scene(self, file["name"], fmtl)
+            images  = self.__upload_files(files, scene)
 
-            self.__upload_files(files, scene)
+            return (scene, images,)

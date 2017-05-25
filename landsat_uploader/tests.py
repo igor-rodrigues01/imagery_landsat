@@ -8,7 +8,7 @@ from django.conf import settings
 from .models import Scene, Image, LandsatGrade
 from .list_files import * # ListLandsatImages
 from .uploader import * # LandsatUploader
-from .utils import get_data_from_landsat_image_name
+from .utils import get_data_image_name
 
 
 class LandsatImageDataExtractionTest(TestCase):
@@ -18,7 +18,7 @@ class LandsatImageDataExtractionTest(TestCase):
         self.name = "LC08_L1TP_231064_20170511_20170511_01_RT"
 
     def test_extraction_data_from_image_name(self):
-        data = get_data_from_landsat_image_name(self.name)
+        data = get_data_image_name(self.name)
         self.assertEqual(data["path"], "231")
         self.assertEqual(data["row"], "064")
         self.assertEqual(data["date"], datetime.strptime( "20170511", "%Y%m%d" ))
@@ -60,7 +60,7 @@ class LandsatUploaderTest(TestCase):
 
         self.uploader = LandsatUploader() # LandsatUploader initialize
         self.scene_name = "LC08_L1TP_231064_20170511_20170511_01_RT"
-        self.data = get_data_from_landsat_image_name(self.scene_name)
+        self.data = get_data_image_name(self.scene_name)
         self.landsatGrade = LandsatGrade.objects.create(
             path=231, 
             row=64,

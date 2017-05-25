@@ -11,4 +11,4 @@ class ListLandsatImages:
         else:
             path = os.path.join(settings.LANDSAT_IMAGES_PATH, sat)
 
-        return [file for file in os.listdir(path) if file.endswith(ext) ]
+        return [ file for file in os.listdir(path) if file.endswith(ext) ]
