@@ -57,6 +57,7 @@ class LandsatUploader():
         return False
 
 
+    # Change Scene Model
     def __create_scene(self, image_name, mtl_file=None):
         """
             Create Scene with image_name and metadata file
@@ -72,7 +73,7 @@ class LandsatUploader():
         else: 
             cloud = 0.0
         
-        scene = Scene.objects.get_or_create(
+        scene = Scene.objects.get_or_create( # Change Scene Model
             path=data["path"],
             row=data["row"],
             sat="L8",
@@ -96,6 +97,7 @@ class LandsatUploader():
         extract = LandsatExtractor(name=name, compressed_file=path)
         return extract.extract_files()
 
+    # Change Image Model
     def __upload_files(self, files, scene):
         """
             Method to create data for Image model with each file from files
@@ -106,7 +108,7 @@ class LandsatUploader():
 
         for file in files:
         
-            image = Image.objects.get_or_create(
+            image = Image.objects.get_or_create( # Change Image Model
                 name = file["name"],
                 type = file["type"],
                 scene = scene,
