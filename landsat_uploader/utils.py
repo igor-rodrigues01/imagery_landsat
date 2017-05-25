@@ -1,5 +1,5 @@
 
-def get_data_from_landsat_image_name(image_name):
+def get_data_image_name(image_name):
 
     from datetime import datetime
 
