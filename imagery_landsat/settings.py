@@ -38,8 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'imagery',
     'landsat_extractor',
     'landsat_uploader',
+    'landsat_processor',
 ]
 
 MIDDLEWARE = [
