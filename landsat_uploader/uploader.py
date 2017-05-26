@@ -8,6 +8,7 @@ from .list_files import ListLandsatImages
 from .utils import get_data_image_name
 from .KeywordFinder import KeywordFinder
 
+
 class LandsatUploader():
     """ 
     Class LandsatUploader to extract and create scene and image
@@ -55,7 +56,6 @@ class LandsatUploader():
             print("\t[ERROR] Path and Row is not valid!")
 
         return False
-
 
     # Change Scene Model
     def __create_scene(self, image_name, mtl_file=None):
