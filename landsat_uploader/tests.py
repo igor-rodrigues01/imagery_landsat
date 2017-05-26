@@ -4,8 +4,8 @@ import shutil
 from datetime import datetime
 from django.test import TestCase
 from django.conf import settings
+from imagery.models import Scene, Image, LandsatGrade
 
-from .models import Scene, Image, LandsatGrade
 from .list_files import * # ListLandsatImages
 from .uploader import * # LandsatUploader
 from .utils import get_data_image_name

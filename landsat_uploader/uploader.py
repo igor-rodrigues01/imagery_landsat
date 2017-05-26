@@ -2,8 +2,8 @@ import os
 
 from django.conf import settings
 from landsat_extractor.extractor import LandsatExtractor
+from imagery.models import Scene, Image, LandsatGrade
 
-from .models import Scene, Image, LandsatGrade
 from .list_files import ListLandsatImages
 from .utils import get_data_image_name
 from .KeywordFinder import KeywordFinder
