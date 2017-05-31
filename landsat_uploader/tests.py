@@ -1,14 +1,15 @@
 import os
 import shutil
+import tarfile
 
 from datetime import datetime
 from django.test import TestCase
 from django.conf import settings
 
 from .models import Scene, Image, LandsatGrade
-from .list_files import * # ListLandsatImages
-from .uploader import * # LandsatUploader
-from .utils import get_data_image_name
+from .list_files import ListLandsatImages
+from .uploader import LandsatUploader # LandsatUploader
+from .utils import get_data_from_landsat_image_name
 
 
 class LandsatImageDataExtractionTest(TestCase):
@@ -18,7 +19,7 @@ class LandsatImageDataExtractionTest(TestCase):
         self.name = "LC08_L1TP_231064_20170511_20170511_01_RT"
 
     def test_extraction_data_from_image_name(self):
-        data = get_data_image_name(self.name)
+        data = get_data_from_landsat_image_name(self.name)
         self.assertEqual(data["path"], "231")
         self.assertEqual(data["row"], "064")
         self.assertEqual(data["date"], datetime.strptime( "20170511", "%Y%m%d" ))
@@ -29,11 +30,12 @@ class LandsatImagesTest(TestCase):
     """ Tests tar.gz list files from defined path """
 
     def setUp(self):
-        self.images = ["LC08_L1TP_231064_20170511_20170511_01_RT.tar.gz"]
+        self.images = ["corrupt.tar.gz","LC08_L1TP_231064_20170511_20170511_01_RT.tar.gz"]
         self.list = ListLandsatImages.get_files()
-
+        self.image_name = "LC08_L1TP_231064_20170511_20170511_01_RT"
+   
     def test_list_images(self):
-        self.assertEqual(self.list, self.images)
+        self.assertEqual(self.list[0], self.images[1])
 
 
 class LandsatUploaderTest(TestCase):
@@ -60,11 +62,16 @@ class LandsatUploaderTest(TestCase):
 
         self.uploader = LandsatUploader() # LandsatUploader initialize
         self.scene_name = "LC08_L1TP_231064_20170511_20170511_01_RT"
-        self.data = get_data_image_name(self.scene_name)
+        self.data = get_data_from_landsat_image_name(self.scene_name)
         self.landsatGrade = LandsatGrade.objects.create(
             path=231, 
             row=64,
             geom=polygon)
+
+        self.l8_path = os.path.join(settings.LANDSAT_IMAGES_PATH, "L8")
+        self.tar = os.path.join(self.l8_path,"{}.tar.gz".format(self.scene_name))
+        self.file = tarfile.open(self.tar)
+
 
     def test_get_scene_name_path(self):
         self.assertEqual(
@@ -119,12 +126,51 @@ class LandsatUploaderTest(TestCase):
             self.assertEqual( scene.name, file["name"]  )
             self.assertEqual( scene.cloud_rate, 14.19   )
 
+    def test_get_data_from_landsat_image_name(self):
+        result = get_data_from_landsat_image_name(self.scene_name)
+        self.assertTrue(result)
+    
+    def test__get_cloud_cover(self):
+        for f in self.uploader._LandsatUploader__get_scene_name_path():
+            file_extracted = self.uploader._LandsatUploader__extract_files(name=f["name"], path=f["path"])
+            mtl_path = [mtl["path"] for mtl in file_extracted if mtl["type"].upper() =="MTL"]
 
+        result = self.uploader._LandsatUploader__get_cloud_cover(mtl_path[0],'CORNER_UL_PROJECTION_X_PRODUCT')
+        verify = isinstance(result,float)
+        self.assertTrue(verify)
+
+    def test__get_cloud_cover_exception(self):
+        result = self.uploader._LandsatUploader__get_cloud_cover(self.file,'ORIGIN')
+        self.assertEqual(result,0.0)
+    
+    def teste__get_scene_geom_exception(self):
+        data = get_data_from_landsat_image_name('LC08_L1TP_231064_20170511_20170511_01_RT_B1.TIF')
+        result = self.uploader._LandsatUploader__get_scene_geom(self.l8_path,data['row'])
+        self.assertFalse(result)
+    
+    def test__extract_files(self):
+        result = self.uploader._LandsatUploader__extract_files(self.scene_name,self.tar)
+        self.assertTrue(result)
+
+    def test__get_mtl_file_exception(self):
+        empty_tar =  os.path.join(self.l8_path,"empty.tar")
+        lis = self.uploader._LandsatUploader__extract_files(self.scene_name,empty_tar)
+        self.assertRaises(ValueError,self.uploader._LandsatUploader__get_mtl_file,lis)
+       
+    def test__get_mtl_file(self):
+        for f in self.uploader._LandsatUploader__get_scene_name_path():
+            file_extracted = self.uploader._LandsatUploader__extract_files(name=f["name"], path=f["path"])
+
+        result = self.uploader._LandsatUploader__get_mtl_file(file_extracted)
+        exists_path = os.path.exists(result)
+
+        self.assertTrue(exists_path)
+    
     def tearDown(self):
-        for scene in Scene.objects.all(): # Delete scenes created after each test 
-            scene.delete() 
-        for image in Image.objects.all(): # Delete image created after each test
-            image.delete()
+        # for scene in Scene.objects.all(): # Delete scenes created after each test 
+        #     scene.delete() 
+        # for image in Image.objects.all(): # Delete image created after each test
+        #     image.delete()
 
         rm_path = os.path.join( settings.MEDIA_ROOT, "L8", self.scene_name ) 
         if os.path.exists( rm_path ): # Delete created files in tests in MEDIA_ROOT

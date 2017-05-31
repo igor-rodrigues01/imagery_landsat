@@ -36,15 +36,11 @@ class LandsatExtractor():
 
     def _open_tar_file(self):
         if self._test_tarfile():
-            try:
-                if not self.quiet:
-                    print("-- Opening {}".format(self.compressed_file))
+            if not self.quiet:
+                print("-- Opening {}".format(self.compressed_file))
 
-                tar = tarfile.open(self.compressed_file)
-                return tar
-            except Exception as exc:
-                raise ValueError("Bad TarFile with exception: {}".format(exc))
-
+            tar = tarfile.open(self.compressed_file)
+            return tar
         return False
 
 

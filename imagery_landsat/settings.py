@@ -84,10 +84,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'landsat',
-        'USER': 'landsat',
-        'PASSWORD': 'Landsat_server',
+        'USER': 'igor',
+        'PASSWORD': '123456',
         'HOST': 'localhost',
-        'PORT': '',
+        'PORT': '5432',
     }
 
 }
