@@ -101,7 +101,7 @@ class LandsatUploader():
     def __upload_files(self, files, scene):
         """
             Method to create data for Image model with each file from files
-            The scene receveid as arg might be a valid scene to be used as FK
+            The scene received as arg might be a valid scene to be used as FK
             returns list of images created
         """
         images_created = []

@@ -53,8 +53,8 @@ class Scene(models.Model):
 
     def create_rgb(self, fpath, file, file_list, quiet=True):
         """
-        Create RGB file and new Image model
-        Return the image       
+        Create RGB file and new Image model.
+        Return the image.      
         """
         if (self.status == 'extracted'):
             composition = LandsatColorComposition(fpath, file, file_list, quiet)
@@ -69,7 +69,7 @@ class Scene(models.Model):
 
             self.status = 'processed'
             return image[0]
-        
+
         else:
             print("\t[ERROR] Scene : status is {} instead of 'Extracted'.".format(self.status))
 
