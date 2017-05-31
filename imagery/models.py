@@ -51,9 +51,9 @@ class Scene(models.Model):
         """Return the folder where the files of the scenes are saved."""
         return join(settings.MEDIA_ROOT, self.sat, self.name)
 
-    def create_rgb(self, fpath, file, file_list):
+    def create_rgb(self, fpath, file, file_list, quiet=True):
         """Return the dict of RGB file created """
-        composition = LandsatColorComposition(fpath, file, file_list)
+        composition = LandsatColorComposition(fpath, file, file_list, quiet)
         return composition.create_composition()
 
     def create_rgb_image(self):
