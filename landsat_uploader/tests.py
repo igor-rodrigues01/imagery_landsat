@@ -120,6 +120,17 @@ class LandsatUploaderTest(TestCase):
             self.assertEqual( scene.cloud_rate, 14.19   )
 
 
+    def test_scene_extract_and_uploder(self):
+        extracted_files = self.uploader.extract_and_populate_data()
+        self.assertEqual(Image.objects.count(), 4)
+        self.assertEqual(Scene.objects.count(), 1)
+        self.assertTrue(self.scene_name in extracted_files)
+        self.assertTrue(extracted_files[self.scene_name])
+        self.assertTrue(extracted_files[self.scene_name]["scene"].name, self.scene_name)
+        self.assertTrue( isinstance(extracted_files[self.scene_name]["scene"], Scene) )
+        self.assertEqual( len(extracted_files[self.scene_name]["images"]), 4 )
+
+
     def tearDown(self):
         for scene in Scene.objects.all(): # Delete scenes created after each test 
             scene.delete() 
