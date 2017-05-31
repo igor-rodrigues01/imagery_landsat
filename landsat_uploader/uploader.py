@@ -21,7 +21,7 @@ class LandsatUploader():
         self.images_list = ListLandsatImages.get_files( path=self.path )
         self.quiet = quiet
 
-    def __get_cloud_cover(self, fpath, keyword):
+    def __get_cloud_cover(self, fpath, keyword="cloud_cover"):
         """ Returns cloud cloud_cover with keywordfinder """
         try:
             finder = KeywordFinder(fpath=fpath)
@@ -35,7 +35,7 @@ class LandsatUploader():
     def __get_mtl_file(self, files):
         """ Returns mtl file on files extracted  """
         for file in files:
-            if file["type"].upper == "MTL":
+            if file["type"].upper() == "MTL":
                 return file["path"]
 
         raise ValueError("\t[WARN] Metadata File is not Found")
@@ -94,7 +94,7 @@ class LandsatUploader():
             Extract files using LandsatExtractor
             returns list of images extracted
         """
-        extract = LandsatExtractor(name=name, compressed_file=path)
+        extract = LandsatExtractor(name=name, compressed_file=path, quiet=self.quiet)
         return extract.extract_files()
 
     # Change Image Model
@@ -118,21 +118,28 @@ class LandsatUploader():
             if not self.quiet:
                 print("Image {} created".format(file["name"]))
 
-            images_created.append(image)
+            images_created.append(image[0])
 
         return images_created
 
-    def extract_files(self):
+    def extract_and_populate_data(self):
         """
             This method extract files using LandsatExtractor module
             and populate data for Image and Scene models.
             returns tuple with scene and images created
         """
+        extracted_files = {}
 
         for file in self.__get_scene_name_path():
+             
             files   = self.__extract_files(name=file["name"], path=file["path"])
             fmtl    = self.__get_mtl_file(files)
-            scene   = self.__create_scene(self, file["name"], fmtl)
+            scene   = self.__create_scene(file["name"], fmtl)
             images  = self.__upload_files(files, scene)
 
-            return (scene, images,)
+            extracted_files[ file["name"] ] = {
+                "scene": scene,
+                "images": images 
+                }
+
+        return extracted_files
