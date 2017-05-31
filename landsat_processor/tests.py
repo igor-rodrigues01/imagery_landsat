@@ -45,7 +45,6 @@ class TestColorComposition(TestCase):
         )
 
         """ Test creation of colored composition """
-
         final_path = processor._set_full_file_path()
         self.assertEqual(
             processor.create_composition(), {"name": self.name,
