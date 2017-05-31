@@ -11,11 +11,11 @@ def files_for_composition(file_list):
     test_oredered_list = [{}, {}, {}]
     for file in file_list:
         if file["type"] == "B6":
-            test_oredered_list[0] = file
+            test_oredered_list[0] = file["path"]
         elif file["type"] == "B5":
-            test_oredered_list[1] = file
+            test_oredered_list[1] = file["path"]
         elif file["type"] == "B4":
-            test_oredered_list[2] = file
+            test_oredered_list[2] = file["path"]
 
 
     return test_oredered_list
@@ -30,7 +30,7 @@ class TestColorComposition(TestCase):
         self.file = os.path.join(settings.LANDSAT_IMAGES_PATH, "L8", file)
         self.file_list = {}
         self.extractor = LandsatExtractor(name=self.name,
-                                          compressed_file=self.file, quiet=False)
+                                          compressed_file=self.file, quiet=True)
 
     def test_create_composition(self):
         ## extract files to test rgb composition

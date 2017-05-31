@@ -53,11 +53,13 @@ class TestCreateRgb(TestCase):
         imgs = Image.objects.filter(scene=self.scene, type__in=["B6", "B5", "B4"])
         plist = [img.path for img in imgs]
         path = os.path.join(settings.MEDIA_ROOT, "L8", self.scene_name)
-        rgb = self.scene.create_rgb(path, self.scene_name, plist)
-        self.assertEqual(rgb['type'], "RGB")
+
+        ## Test Image.Model creation ##
+        img = self.scene.create_rgb(path, self.scene_name, plist)
+        self.assertEqual(img[0].type, "RGB")
 
         ## Test image composition creation ##
-        datafile = gdal.Open(rgb["path"])
+        datafile = gdal.Open(img[0].path)
         self.assertEqual(datafile.RasterCount, 3)
 
     def tearDown(self):

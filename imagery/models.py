@@ -52,13 +52,21 @@ class Scene(models.Model):
         return join(settings.MEDIA_ROOT, self.sat, self.name)
 
     def create_rgb(self, fpath, file, file_list, quiet=True):
-        """Return the dict of RGB file created """
+        """
+        Create RGB file and new Image model
+        Return the image       
+        """
         composition = LandsatColorComposition(fpath, file, file_list, quiet)
-        return composition.create_composition()
+        image_file = composition.create_composition()
 
-    def create_rgb_image(self):
-        """Create new Image based on create_rgb return information"""
-        pass
+        image = Image.objects.get_or_create(  # Change Image Model
+            name=image_file["name"],
+            type=image_file["type"],
+            scene=self,
+            path=image_file["path"]
+        )
+        return image
+
 
 
 @python_2_unicode_compatible

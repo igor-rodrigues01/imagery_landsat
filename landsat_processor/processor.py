@@ -39,7 +39,7 @@ class LandsatColorComposition():
                                 PHOTOMETRIC=RGB -o {}".format(quiet, file_path)
 
         for file in self.file_list:
-            gdal_mergepy_command += " " + file["path"]
+            gdal_mergepy_command += " " + file
 
         subprocess.call(gdal_mergepy_command, shell=True)
 
