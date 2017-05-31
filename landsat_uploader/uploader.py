@@ -81,7 +81,7 @@ class LandsatUploader():
             name=data["name"],
             cloud_rate=cloud,
             geom=geom,
-            status="downloaded",
+            status="extracted",
             )
 
         if not self.quiet:

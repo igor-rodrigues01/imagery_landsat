@@ -56,10 +56,10 @@ class TestCreateRgb(TestCase):
 
         ## Test Image.Model creation ##
         img = self.scene.create_rgb(path, self.scene_name, plist)
-        self.assertEqual(img[0].type, "RGB")
+        self.assertEqual(img.type, "RGB")
 
         ## Test image composition creation ##
-        datafile = gdal.Open(img[0].path)
+        datafile = gdal.Open(img.path)
         self.assertEqual(datafile.RasterCount, 3)
 
     def tearDown(self):

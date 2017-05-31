@@ -2,7 +2,6 @@ from django.utils.encoding import python_2_unicode_compatible
 from django.contrib.gis.db import models
 from django.utils.translation import ugettext, ugettext_lazy as _
 from landsat_processor.processor import LandsatColorComposition
-
 from django.conf import settings
 
 
@@ -25,6 +24,7 @@ class Scene(models.Model):
         ('downloading', _('Downloading')),
         ('dl_failed', _('Download Failed')),
         ('downloaded', _('Downloaded')),
+        ('extracted', _('Extracted')),
         ('processing', _('Processing')),
         ('p_failed', _('Processing Failed')),
         ('processed', _('Processed'))
@@ -56,16 +56,24 @@ class Scene(models.Model):
         Create RGB file and new Image model
         Return the image       
         """
-        composition = LandsatColorComposition(fpath, file, file_list, quiet)
-        image_file = composition.create_composition()
+        if (self.status == 'extracted'):
+            composition = LandsatColorComposition(fpath, file, file_list, quiet)
+            image_file = composition.create_composition()
 
-        image = Image.objects.get_or_create(  # Change Image Model
-            name=image_file["name"],
-            type=image_file["type"],
-            scene=self,
-            path=image_file["path"]
-        )
-        return image
+            image = Image.objects.get_or_create(  # Change Image Model
+                name=image_file["name"],
+                type=image_file["type"],
+                scene=self,
+                path=image_file["path"]
+            )
+
+            self.status = 'processed'
+            return image[0]
+        
+        else:
+            print("\t[ERROR] Scene : status is {} instead of 'Extracted'.".format(self.status))
+
+        return False
 
 
 
