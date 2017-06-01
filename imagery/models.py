@@ -1,14 +1,9 @@
 from django.utils.encoding import python_2_unicode_compatible
 from django.contrib.gis.db import models
-from django.contrib.gis.geos import Polygon
-from django.core.exceptions import ValidationError
 from django.utils.translation import ugettext, ugettext_lazy as _
-from django.db.models.signals import post_delete
-from django.dispatch import receiver
-from django.contrib.auth.models import User
-from django.core.urlresolvers import reverse
-
+from landsat_processor.processor import LandsatColorComposition
 from django.conf import settings
+
 
 
 class Satellite(object):
@@ -29,6 +24,7 @@ class Scene(models.Model):
         ('downloading', _('Downloading')),
         ('dl_failed', _('Download Failed')),
         ('downloaded', _('Downloaded')),
+        ('extracted', _('Extracted')),
         ('processing', _('Processing')),
         ('p_failed', _('Processing Failed')),
         ('processed', _('Processed'))
@@ -54,6 +50,31 @@ class Scene(models.Model):
     def dir(self):
         """Return the folder where the files of the scenes are saved."""
         return join(settings.MEDIA_ROOT, self.sat, self.name)
+
+    def create_rgb(self, fpath, file, file_list, quiet=True):
+        """
+        Create RGB file and new Image model.
+        Return the image.      
+        """
+        if (self.status == 'extracted'):
+            composition = LandsatColorComposition(fpath, file, file_list, quiet)
+            image_file = composition.create_composition()
+
+            image = Image.objects.get_or_create(  # Change Image Model
+                name=image_file["name"],
+                type=image_file["type"],
+                scene=self,
+                path=image_file["path"]
+            )
+
+            self.status = 'processed'
+            return image[0]
+
+        else:
+            print("\t[ERROR] Scene : status is {} instead of 'Extracted'.".format(self.status))
+
+        return False
+
 
 
 @python_2_unicode_compatible

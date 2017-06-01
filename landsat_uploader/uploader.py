@@ -2,11 +2,12 @@ import os
 
 from django.conf import settings
 from landsat_extractor.extractor import LandsatExtractor
+from imagery.models import Scene, Image, LandsatGrade
 
-from .models import Scene, Image, LandsatGrade
 from .list_files import ListLandsatImages
 from .utils import get_data_from_landsat_image_name
 from .KeywordFinder import KeywordFinder
+
 
 class LandsatUploader():
     """ 
@@ -19,10 +20,15 @@ class LandsatUploader():
         self.path = os.path.join(settings.LANDSAT_IMAGES_PATH, self.sat)
         self.images_list = ListLandsatImages.get_files( path=self.path )
         self.quiet = quiet
+<<<<<<< HEAD
         # self.ListLandsatImages = ListLandsatImages()
         # self.images_list = ListLandsatImages.get_files(path=self.path)
     
     def __get_cloud_cover(self, fpath, keyword):
+=======
+
+    def __get_cloud_cover(self, fpath, keyword="cloud_cover"):
+>>>>>>> f5e7edd9335afd7cac6752857e1faa5c4aad715e
         """ Returns cloud cloud_cover with keywordfinder """
         try:
             finder = KeywordFinder(fpath=fpath)
@@ -36,7 +42,11 @@ class LandsatUploader():
     def __get_mtl_file(self, files):
         """ Returns mtl file on files extracted  """
         for file in files:
+<<<<<<< HEAD
             if file["type"] == "MTL":
+=======
+            if file["type"].upper() == "MTL":
+>>>>>>> f5e7edd9335afd7cac6752857e1faa5c4aad715e
                 return file["path"]
 
         raise ValueError("\t[WARN] Metadata File is not Found")
@@ -57,7 +67,12 @@ class LandsatUploader():
             print("\t[ERROR] Path and Row is not valid!")
 
         return False
+<<<<<<< HEAD
     
+=======
+
+    # Change Scene Model
+>>>>>>> f5e7edd9335afd7cac6752857e1faa5c4aad715e
     def __create_scene(self, image_name, mtl_file=None):
         """
             Create Scene with image_name and metadata file
@@ -73,7 +88,7 @@ class LandsatUploader():
         else: 
             cloud = 0.0
         
-        scene = Scene.objects.get_or_create(
+        scene = Scene.objects.get_or_create( # Change Scene Model
             path=data["path"],
             row=data["row"],
             sat="L8",
@@ -81,7 +96,7 @@ class LandsatUploader():
             name=data["name"],
             cloud_rate=cloud,
             geom=geom,
-            status="downloaded",
+            status="extracted",
             )
 
         if not self.quiet:
@@ -94,20 +109,21 @@ class LandsatUploader():
             Extract files using LandsatExtractor
             returns list of images extracted
         """
-        extract = LandsatExtractor(name=name, compressed_file=path)
+        extract = LandsatExtractor(name=name, compressed_file=path, quiet=self.quiet)
         return extract.extract_files()
 
+    # Change Image Model
     def __upload_files(self, files, scene):
         """
             Method to create data for Image model with each file from files
-            The scene receveid as arg might be a valid scene to be used as FK
+            The scene received as arg might be a valid scene to be used as FK
             returns list of images created
         """
         images_created = []
 
         for file in files:
         
-            image = Image.objects.get_or_create(
+            image = Image.objects.get_or_create( # Change Image Model
                 name = file["name"],
                 type = file["type"],
                 scene = scene,
@@ -117,21 +133,33 @@ class LandsatUploader():
             if not self.quiet:
                 print("Image {} created".format(file["name"]))
 
-            images_created.append(image)
+            images_created.append(image[0])
 
         return images_created
 
-    def extract_files(self):
+    def extract_and_populate_data(self):
         """
             This method extract files using LandsatExtractor module
             and populate data for Image and Scene models.
             returns tuple with scene and images created
         """
+        extracted_files = {}
 
         for file in self.__get_scene_name_path():
+             
             files   = self.__extract_files(name=file["name"], path=file["path"])
             fmtl    = self.__get_mtl_file(files)
-            scene   = self.__create_scene(self, file["name"], fmtl)
+            scene   = self.__create_scene(file["name"], fmtl)
             images  = self.__upload_files(files, scene)
+<<<<<<< HEAD
        
             return (scene, images,)
+=======
+
+            extracted_files[ file["name"] ] = {
+                "scene": scene,
+                "images": images 
+                }
+
+        return extracted_files
+>>>>>>> f5e7edd9335afd7cac6752857e1faa5c4aad715e

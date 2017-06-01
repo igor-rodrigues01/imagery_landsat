@@ -5,11 +5,18 @@ import tarfile
 from datetime import datetime
 from django.test import TestCase
 from django.conf import settings
+from imagery.models import Scene, Image, LandsatGrade
 
+<<<<<<< HEAD
 from .models import Scene, Image, LandsatGrade
 from .list_files import ListLandsatImages
 from .uploader import LandsatUploader # LandsatUploader
 from .utils import get_data_from_landsat_image_name
+=======
+from .list_files import * # ListLandsatImages
+from .uploader import * # LandsatUploader
+from .utils import get_data_image_name
+>>>>>>> f5e7edd9335afd7cac6752857e1faa5c4aad715e
 
 
 class LandsatImageDataExtractionTest(TestCase):
@@ -126,6 +133,7 @@ class LandsatUploaderTest(TestCase):
             self.assertEqual( scene.name, file["name"]  )
             self.assertEqual( scene.cloud_rate, 14.19   )
 
+<<<<<<< HEAD
     def test_get_data_from_landsat_image_name(self):
         result = get_data_from_landsat_image_name(self.scene_name)
         self.assertTrue(result)
@@ -166,6 +174,20 @@ class LandsatUploaderTest(TestCase):
 
         self.assertTrue(exists_path)
     
+=======
+
+    def test_scene_extract_and_uploder(self):
+        extracted_files = self.uploader.extract_and_populate_data()
+        self.assertEqual(Image.objects.count(), 4)
+        self.assertEqual(Scene.objects.count(), 1)
+        self.assertTrue(self.scene_name in extracted_files)
+        self.assertTrue(extracted_files[self.scene_name])
+        self.assertTrue(extracted_files[self.scene_name]["scene"].name, self.scene_name)
+        self.assertTrue( isinstance(extracted_files[self.scene_name]["scene"], Scene) )
+        self.assertEqual( len(extracted_files[self.scene_name]["images"]), 4 )
+
+
+>>>>>>> f5e7edd9335afd7cac6752857e1faa5c4aad715e
     def tearDown(self):
         # for scene in Scene.objects.all(): # Delete scenes created after each test 
         #     scene.delete() 
