@@ -16,7 +16,11 @@ from .utils import get_data_from_landsat_image_name
 from .list_files import * # ListLandsatImages
 from .uploader import * # LandsatUploader
 from .utils import get_data_image_name
+<<<<<<< HEAD
 >>>>>>> f5e7edd9335afd7cac6752857e1faa5c4aad715e
+=======
+>>>>>>> f700cc56ad402c5477292ed8093fd35139174af3
+>>>>>>> tests
 
 
 class LandsatImageDataExtractionTest(TestCase):
@@ -187,7 +191,11 @@ class LandsatUploaderTest(TestCase):
         self.assertEqual( len(extracted_files[self.scene_name]["images"]), 4 )
 
 
+<<<<<<< HEAD
 >>>>>>> f5e7edd9335afd7cac6752857e1faa5c4aad715e
+=======
+>>>>>>> f700cc56ad402c5477292ed8093fd35139174af3
+>>>>>>> tests
     def tearDown(self):
         # for scene in Scene.objects.all(): # Delete scenes created after each test 
         #     scene.delete() 

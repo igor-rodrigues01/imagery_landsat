@@ -58,9 +58,12 @@ class TestCreateRgb(TestCase):
         img = self.scene.create_rgb(path, self.scene_name, plist)
         self.assertEqual(img.type, "RGB")
 
+<<<<<<< HEAD
         ## Test Scene status ##
         self.assertEqual(self.scene.status, 'processed')
 
+=======
+>>>>>>> tests
         ## Test image composition creation ##
         datafile = gdal.Open(img.path)
         self.assertEqual(datafile.RasterCount, 3)

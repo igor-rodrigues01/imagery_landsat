@@ -28,7 +28,11 @@ class LandsatUploader():
 =======
 
     def __get_cloud_cover(self, fpath, keyword="cloud_cover"):
+<<<<<<< HEAD
 >>>>>>> f5e7edd9335afd7cac6752857e1faa5c4aad715e
+=======
+>>>>>>> f700cc56ad402c5477292ed8093fd35139174af3
+>>>>>>> tests
         """ Returns cloud cloud_cover with keywordfinder """
         try:
             finder = KeywordFinder(fpath=fpath)
@@ -46,7 +50,11 @@ class LandsatUploader():
             if file["type"] == "MTL":
 =======
             if file["type"].upper() == "MTL":
+<<<<<<< HEAD
 >>>>>>> f5e7edd9335afd7cac6752857e1faa5c4aad715e
+=======
+>>>>>>> f700cc56ad402c5477292ed8093fd35139174af3
+>>>>>>> tests
                 return file["path"]
 
         raise ValueError("\t[WARN] Metadata File is not Found")
@@ -72,7 +80,11 @@ class LandsatUploader():
 =======
 
     # Change Scene Model
+<<<<<<< HEAD
 >>>>>>> f5e7edd9335afd7cac6752857e1faa5c4aad715e
+=======
+>>>>>>> f700cc56ad402c5477292ed8093fd35139174af3
+>>>>>>> tests
     def __create_scene(self, image_name, mtl_file=None):
         """
             Create Scene with image_name and metadata file
@@ -162,4 +174,8 @@ class LandsatUploader():
                 }
 
         return extracted_files
+<<<<<<< HEAD
 >>>>>>> f5e7edd9335afd7cac6752857e1faa5c4aad715e
+=======
+>>>>>>> f700cc56ad402c5477292ed8093fd35139174af3
+>>>>>>> tests
