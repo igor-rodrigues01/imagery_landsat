@@ -7,21 +7,15 @@ from django.test import TestCase
 from django.conf import settings
 from imagery.models import Scene, Image, LandsatGrade
 
-<<<<<<< HEAD
+ 
 from .models import Scene, Image, LandsatGrade
 from .list_files import ListLandsatImages
 from .uploader import LandsatUploader # LandsatUploader
-from .utils import get_data_from_landsat_image_name
-=======
+from .utils import get_data_image_name_
+
 from .list_files import * # ListLandsatImages
 from .uploader import * # LandsatUploader
 from .utils import get_data_image_name
-<<<<<<< HEAD
->>>>>>> f5e7edd9335afd7cac6752857e1faa5c4aad715e
-=======
->>>>>>> f700cc56ad402c5477292ed8093fd35139174af3
->>>>>>> tests
-
 
 class LandsatImageDataExtractionTest(TestCase):
     """ Tests scene data from scene image name """
@@ -30,7 +24,7 @@ class LandsatImageDataExtractionTest(TestCase):
         self.name = "LC08_L1TP_231064_20170511_20170511_01_RT"
 
     def test_extraction_data_from_image_name(self):
-        data = get_data_from_landsat_image_name(self.name)
+        data = get_data_image_name_(self.name)
         self.assertEqual(data["path"], "231")
         self.assertEqual(data["row"], "064")
         self.assertEqual(data["date"], datetime.strptime( "20170511", "%Y%m%d" ))
@@ -39,7 +33,6 @@ class LandsatImageDataExtractionTest(TestCase):
 
 class LandsatImagesTest(TestCase):
     """ Tests tar.gz list files from defined path """
-
     def setUp(self):
         self.images = ["corrupt.tar.gz","LC08_L1TP_231064_20170511_20170511_01_RT.tar.gz"]
         self.list = ListLandsatImages.get_files()
@@ -48,11 +41,8 @@ class LandsatImagesTest(TestCase):
     def test_list_images(self):
         self.assertEqual(self.list[0], self.images[1])
 
-
 class LandsatUploaderTest(TestCase):
-
     """ Tests Upload data after extraction """
-
     def setUp(self):
 
         polygon = 'POLYGON\
@@ -73,7 +63,7 @@ class LandsatUploaderTest(TestCase):
 
         self.uploader = LandsatUploader() # LandsatUploader initialize
         self.scene_name = "LC08_L1TP_231064_20170511_20170511_01_RT"
-        self.data = get_data_from_landsat_image_name(self.scene_name)
+        self.data = get_data_image_name_(self.scene_name)
         self.landsatGrade = LandsatGrade.objects.create(
             path=231, 
             row=64,
@@ -82,7 +72,6 @@ class LandsatUploaderTest(TestCase):
         self.l8_path = os.path.join(settings.LANDSAT_IMAGES_PATH, "L8")
         self.tar = os.path.join(self.l8_path,"{}.tar.gz".format(self.scene_name))
         self.file = tarfile.open(self.tar)
-
 
     def test_get_scene_name_path(self):
         self.assertEqual(
@@ -136,10 +125,9 @@ class LandsatUploaderTest(TestCase):
             self.assertEqual( len(files_created), 4     )
             self.assertEqual( scene.name, file["name"]  )
             self.assertEqual( scene.cloud_rate, 14.19   )
-
-<<<<<<< HEAD
-    def test_get_data_from_landsat_image_name(self):
-        result = get_data_from_landsat_image_name(self.scene_name)
+ 
+    def test_get_data_image_name_(self):
+        result = get_data_image_name_(self.scene_name)
         self.assertTrue(result)
     
     def test__get_cloud_cover(self):
@@ -156,7 +144,7 @@ class LandsatUploaderTest(TestCase):
         self.assertEqual(result,0.0)
     
     def teste__get_scene_geom_exception(self):
-        data = get_data_from_landsat_image_name('LC08_L1TP_231064_20170511_20170511_01_RT_B1.TIF')
+        data = get_data_image_name_('LC08_L1TP_231064_20170511_20170511_01_RT_B1.TIF')
         result = self.uploader._LandsatUploader__get_scene_geom(self.l8_path,data['row'])
         self.assertFalse(result)
     
@@ -177,8 +165,6 @@ class LandsatUploaderTest(TestCase):
         exists_path = os.path.exists(result)
 
         self.assertTrue(exists_path)
-    
-=======
 
     def test_scene_extract_and_uploder(self):
         extracted_files = self.uploader.extract_and_populate_data()
@@ -190,12 +176,6 @@ class LandsatUploaderTest(TestCase):
         self.assertTrue( isinstance(extracted_files[self.scene_name]["scene"], Scene) )
         self.assertEqual( len(extracted_files[self.scene_name]["images"]), 4 )
 
-
-<<<<<<< HEAD
->>>>>>> f5e7edd9335afd7cac6752857e1faa5c4aad715e
-=======
->>>>>>> f700cc56ad402c5477292ed8093fd35139174af3
->>>>>>> tests
     def tearDown(self):
         # for scene in Scene.objects.all(): # Delete scenes created after each test 
         #     scene.delete() 
