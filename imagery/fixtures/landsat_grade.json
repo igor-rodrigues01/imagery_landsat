@@ -1,6 +1,6 @@
 [
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":1,
       "fields":{
          "path":214,
@@ -9,7 +9,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":2,
       "fields":{
          "path":214,
@@ -18,7 +18,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":3,
       "fields":{
          "path":214,
@@ -27,7 +27,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":4,
       "fields":{
          "path":214,
@@ -36,7 +36,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":5,
       "fields":{
          "path":214,
@@ -45,7 +45,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":6,
       "fields":{
          "path":230,
@@ -54,7 +54,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":7,
       "fields":{
          "path":230,
@@ -63,7 +63,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":8,
       "fields":{
          "path":230,
@@ -72,7 +72,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":9,
       "fields":{
          "path":230,
@@ -81,7 +81,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":10,
       "fields":{
          "path":230,
@@ -90,7 +90,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":11,
       "fields":{
          "path":230,
@@ -99,7 +99,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":12,
       "fields":{
          "path":230,
@@ -108,7 +108,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":13,
       "fields":{
          "path":230,
@@ -117,7 +117,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":14,
       "fields":{
          "path":230,
@@ -126,7 +126,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":15,
       "fields":{
          "path":230,
@@ -135,7 +135,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":16,
       "fields":{
          "path":230,
@@ -144,7 +144,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":17,
       "fields":{
          "path":4,
@@ -153,7 +153,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":18,
       "fields":{
          "path":4,
@@ -162,7 +162,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":19,
       "fields":{
          "path":4,
@@ -171,7 +171,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":20,
       "fields":{
          "path":4,
@@ -180,7 +180,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":21,
       "fields":{
          "path":4,
@@ -189,7 +189,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":22,
       "fields":{
          "path":4,
@@ -198,7 +198,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":23,
       "fields":{
          "path":4,
@@ -207,7 +207,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":24,
       "fields":{
          "path":4,
@@ -216,7 +216,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":25,
       "fields":{
          "path":4,
@@ -225,7 +225,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":26,
       "fields":{
          "path":221,
@@ -234,7 +234,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":27,
       "fields":{
          "path":221,
@@ -243,7 +243,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":28,
       "fields":{
          "path":221,
@@ -252,7 +252,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":29,
       "fields":{
          "path":221,
@@ -261,7 +261,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":30,
       "fields":{
          "path":221,
@@ -270,7 +270,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":31,
       "fields":{
          "path":221,
@@ -279,7 +279,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":32,
       "fields":{
          "path":221,
@@ -288,7 +288,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":33,
       "fields":{
          "path":221,
@@ -297,7 +297,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":34,
       "fields":{
          "path":221,
@@ -306,7 +306,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":35,
       "fields":{
          "path":221,
@@ -315,7 +315,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":36,
       "fields":{
          "path":221,
@@ -324,7 +324,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":37,
       "fields":{
          "path":221,
@@ -333,7 +333,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":38,
       "fields":{
          "path":221,
@@ -342,7 +342,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":39,
       "fields":{
          "path":221,
@@ -351,7 +351,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":40,
       "fields":{
          "path":221,
@@ -360,7 +360,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":41,
       "fields":{
          "path":221,
@@ -369,7 +369,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":42,
       "fields":{
          "path":221,
@@ -378,7 +378,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":43,
       "fields":{
          "path":221,
@@ -387,7 +387,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":44,
       "fields":{
          "path":221,
@@ -396,7 +396,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":45,
       "fields":{
          "path":221,
@@ -405,7 +405,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":46,
       "fields":{
          "path":221,
@@ -414,7 +414,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":47,
       "fields":{
          "path":221,
@@ -423,7 +423,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":48,
       "fields":{
          "path":221,
@@ -432,7 +432,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":49,
       "fields":{
          "path":221,
@@ -441,7 +441,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":50,
       "fields":{
          "path":228,
@@ -450,7 +450,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":51,
       "fields":{
          "path":228,
@@ -459,7 +459,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":52,
       "fields":{
          "path":228,
@@ -468,7 +468,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":53,
       "fields":{
          "path":228,
@@ -477,7 +477,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":54,
       "fields":{
          "path":228,
@@ -486,7 +486,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":55,
       "fields":{
          "path":228,
@@ -495,7 +495,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":56,
       "fields":{
          "path":228,
@@ -504,7 +504,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":57,
       "fields":{
          "path":228,
@@ -513,7 +513,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":58,
       "fields":{
          "path":228,
@@ -522,7 +522,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":59,
       "fields":{
          "path":228,
@@ -531,7 +531,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":60,
       "fields":{
          "path":228,
@@ -540,7 +540,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":61,
       "fields":{
          "path":228,
@@ -549,7 +549,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":62,
       "fields":{
          "path":228,
@@ -558,7 +558,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":63,
       "fields":{
          "path":228,
@@ -567,7 +567,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":64,
       "fields":{
          "path":228,
@@ -576,7 +576,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":65,
       "fields":{
          "path":2,
@@ -585,7 +585,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":66,
       "fields":{
          "path":2,
@@ -594,7 +594,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":67,
       "fields":{
          "path":2,
@@ -603,7 +603,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":68,
       "fields":{
          "path":2,
@@ -612,7 +612,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":69,
       "fields":{
          "path":2,
@@ -621,7 +621,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":70,
       "fields":{
          "path":2,
@@ -630,7 +630,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":71,
       "fields":{
          "path":2,
@@ -639,7 +639,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":72,
       "fields":{
          "path":2,
@@ -648,7 +648,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":73,
       "fields":{
          "path":2,
@@ -657,7 +657,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":74,
       "fields":{
          "path":2,
@@ -666,7 +666,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":75,
       "fields":{
          "path":2,
@@ -675,7 +675,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":76,
       "fields":{
          "path":219,
@@ -684,7 +684,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":77,
       "fields":{
          "path":219,
@@ -693,7 +693,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":78,
       "fields":{
          "path":219,
@@ -702,7 +702,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":79,
       "fields":{
          "path":219,
@@ -711,7 +711,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":80,
       "fields":{
          "path":219,
@@ -720,7 +720,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":81,
       "fields":{
          "path":219,
@@ -729,7 +729,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":82,
       "fields":{
          "path":219,
@@ -738,7 +738,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":83,
       "fields":{
          "path":219,
@@ -747,7 +747,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":84,
       "fields":{
          "path":219,
@@ -756,7 +756,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":85,
       "fields":{
          "path":219,
@@ -765,7 +765,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":86,
       "fields":{
          "path":219,
@@ -774,7 +774,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":87,
       "fields":{
          "path":219,
@@ -783,7 +783,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":88,
       "fields":{
          "path":219,
@@ -792,7 +792,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":89,
       "fields":{
          "path":219,
@@ -801,7 +801,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":90,
       "fields":{
          "path":219,
@@ -810,7 +810,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":91,
       "fields":{
          "path":219,
@@ -819,7 +819,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":92,
       "fields":{
          "path":219,
@@ -828,7 +828,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":93,
       "fields":{
          "path":219,
@@ -837,7 +837,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":94,
       "fields":{
          "path":219,
@@ -846,7 +846,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":95,
       "fields":{
          "path":226,
@@ -855,7 +855,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":96,
       "fields":{
          "path":226,
@@ -864,7 +864,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":97,
       "fields":{
          "path":226,
@@ -873,7 +873,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":98,
       "fields":{
          "path":226,
@@ -882,7 +882,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":99,
       "fields":{
          "path":226,
@@ -891,7 +891,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":100,
       "fields":{
          "path":226,
@@ -900,7 +900,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":101,
       "fields":{
          "path":226,
@@ -909,7 +909,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":102,
       "fields":{
          "path":226,
@@ -918,7 +918,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":103,
       "fields":{
          "path":226,
@@ -927,7 +927,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":104,
       "fields":{
          "path":226,
@@ -936,7 +936,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":105,
       "fields":{
          "path":226,
@@ -945,7 +945,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":106,
       "fields":{
          "path":226,
@@ -954,7 +954,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":107,
       "fields":{
          "path":226,
@@ -963,7 +963,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":108,
       "fields":{
          "path":226,
@@ -972,7 +972,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":109,
       "fields":{
          "path":226,
@@ -981,7 +981,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":110,
       "fields":{
          "path":226,
@@ -990,7 +990,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":111,
       "fields":{
          "path":226,
@@ -999,7 +999,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":112,
       "fields":{
          "path":226,
@@ -1008,7 +1008,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":113,
       "fields":{
          "path":226,
@@ -1017,7 +1017,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":114,
       "fields":{
          "path":217,
@@ -1026,7 +1026,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":115,
       "fields":{
          "path":217,
@@ -1035,7 +1035,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":116,
       "fields":{
          "path":217,
@@ -1044,7 +1044,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":117,
       "fields":{
          "path":217,
@@ -1053,7 +1053,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":118,
       "fields":{
          "path":217,
@@ -1062,7 +1062,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":119,
       "fields":{
          "path":217,
@@ -1071,7 +1071,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":120,
       "fields":{
          "path":217,
@@ -1080,7 +1080,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":121,
       "fields":{
          "path":217,
@@ -1089,7 +1089,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":122,
       "fields":{
          "path":217,
@@ -1098,7 +1098,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":123,
       "fields":{
          "path":217,
@@ -1107,7 +1107,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":124,
       "fields":{
          "path":217,
@@ -1116,7 +1116,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":125,
       "fields":{
          "path":217,
@@ -1125,7 +1125,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":126,
       "fields":{
          "path":217,
@@ -1134,7 +1134,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":127,
       "fields":{
          "path":217,
@@ -1143,7 +1143,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":128,
       "fields":{
          "path":217,
@@ -1152,7 +1152,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":129,
       "fields":{
          "path":233,
@@ -1161,7 +1161,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":130,
       "fields":{
          "path":233,
@@ -1170,7 +1170,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":131,
       "fields":{
          "path":233,
@@ -1179,7 +1179,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":132,
       "fields":{
          "path":233,
@@ -1188,7 +1188,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":133,
       "fields":{
          "path":233,
@@ -1197,7 +1197,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":134,
       "fields":{
          "path":233,
@@ -1206,7 +1206,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":135,
       "fields":{
          "path":233,
@@ -1215,7 +1215,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":136,
       "fields":{
          "path":233,
@@ -1224,7 +1224,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":137,
       "fields":{
          "path":233,
@@ -1233,7 +1233,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":138,
       "fields":{
          "path":233,
@@ -1242,7 +1242,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":139,
       "fields":{
          "path":233,
@@ -1251,7 +1251,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":140,
       "fields":{
          "path":233,
@@ -1260,7 +1260,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":141,
       "fields":{
          "path":224,
@@ -1269,7 +1269,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":142,
       "fields":{
          "path":224,
@@ -1278,7 +1278,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":143,
       "fields":{
          "path":224,
@@ -1287,7 +1287,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":144,
       "fields":{
          "path":224,
@@ -1296,7 +1296,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":145,
       "fields":{
          "path":224,
@@ -1305,7 +1305,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":146,
       "fields":{
          "path":224,
@@ -1314,7 +1314,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":147,
       "fields":{
          "path":224,
@@ -1323,7 +1323,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":148,
       "fields":{
          "path":224,
@@ -1332,7 +1332,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":149,
       "fields":{
          "path":224,
@@ -1341,7 +1341,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":150,
       "fields":{
          "path":224,
@@ -1350,7 +1350,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":151,
       "fields":{
          "path":224,
@@ -1359,7 +1359,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":152,
       "fields":{
          "path":231,
@@ -1368,7 +1368,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":153,
       "fields":{
          "path":224,
@@ -1377,7 +1377,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":154,
       "fields":{
          "path":224,
@@ -1386,7 +1386,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":155,
       "fields":{
          "path":224,
@@ -1395,7 +1395,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":156,
       "fields":{
          "path":224,
@@ -1404,7 +1404,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":157,
       "fields":{
          "path":224,
@@ -1413,7 +1413,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":158,
       "fields":{
          "path":224,
@@ -1422,7 +1422,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":159,
       "fields":{
          "path":224,
@@ -1431,7 +1431,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":160,
       "fields":{
          "path":224,
@@ -1440,7 +1440,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":161,
       "fields":{
          "path":224,
@@ -1449,7 +1449,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":162,
       "fields":{
          "path":224,
@@ -1458,7 +1458,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":163,
       "fields":{
          "path":224,
@@ -1467,7 +1467,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":164,
       "fields":{
          "path":224,
@@ -1476,7 +1476,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":165,
       "fields":{
          "path":215,
@@ -1485,7 +1485,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":166,
       "fields":{
          "path":215,
@@ -1494,7 +1494,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":167,
       "fields":{
          "path":215,
@@ -1503,7 +1503,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":168,
       "fields":{
          "path":215,
@@ -1512,7 +1512,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":169,
       "fields":{
          "path":215,
@@ -1521,7 +1521,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":170,
       "fields":{
          "path":215,
@@ -1530,7 +1530,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":171,
       "fields":{
          "path":215,
@@ -1539,7 +1539,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":172,
       "fields":{
          "path":215,
@@ -1548,7 +1548,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":173,
       "fields":{
          "path":215,
@@ -1557,7 +1557,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":174,
       "fields":{
          "path":215,
@@ -1566,7 +1566,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":175,
       "fields":{
          "path":215,
@@ -1575,7 +1575,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":176,
       "fields":{
          "path":215,
@@ -1584,7 +1584,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":177,
       "fields":{
          "path":215,
@@ -1593,7 +1593,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":178,
       "fields":{
          "path":231,
@@ -1602,7 +1602,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":179,
       "fields":{
          "path":231,
@@ -1611,7 +1611,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":180,
       "fields":{
          "path":231,
@@ -1620,7 +1620,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":181,
       "fields":{
          "path":231,
@@ -1629,7 +1629,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":182,
       "fields":{
          "path":231,
@@ -1638,7 +1638,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":183,
       "fields":{
          "path":231,
@@ -1647,7 +1647,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":184,
       "fields":{
          "path":231,
@@ -1656,7 +1656,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":185,
       "fields":{
          "path":231,
@@ -1665,7 +1665,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":186,
       "fields":{
          "path":231,
@@ -1674,7 +1674,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":187,
       "fields":{
          "path":231,
@@ -1683,7 +1683,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":188,
       "fields":{
          "path":231,
@@ -1692,7 +1692,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":189,
       "fields":{
          "path":231,
@@ -1701,7 +1701,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":190,
       "fields":{
          "path":5,
@@ -1710,7 +1710,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":191,
       "fields":{
          "path":5,
@@ -1719,7 +1719,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":192,
       "fields":{
          "path":5,
@@ -1728,7 +1728,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":193,
       "fields":{
          "path":5,
@@ -1737,7 +1737,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":194,
       "fields":{
          "path":5,
@@ -1746,7 +1746,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":195,
       "fields":{
          "path":5,
@@ -1755,7 +1755,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":196,
       "fields":{
          "path":5,
@@ -1764,7 +1764,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":197,
       "fields":{
          "path":222,
@@ -1773,7 +1773,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":198,
       "fields":{
          "path":222,
@@ -1782,7 +1782,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":199,
       "fields":{
          "path":222,
@@ -1791,7 +1791,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":200,
       "fields":{
          "path":222,
@@ -1800,7 +1800,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":201,
       "fields":{
          "path":222,
@@ -1809,7 +1809,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":202,
       "fields":{
          "path":222,
@@ -1818,7 +1818,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":203,
       "fields":{
          "path":222,
@@ -1827,7 +1827,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":204,
       "fields":{
          "path":222,
@@ -1836,7 +1836,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":205,
       "fields":{
          "path":222,
@@ -1845,7 +1845,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":206,
       "fields":{
          "path":222,
@@ -1854,7 +1854,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":207,
       "fields":{
          "path":222,
@@ -1863,7 +1863,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":208,
       "fields":{
          "path":222,
@@ -1872,7 +1872,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":209,
       "fields":{
          "path":222,
@@ -1881,7 +1881,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":210,
       "fields":{
          "path":222,
@@ -1890,7 +1890,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":211,
       "fields":{
          "path":222,
@@ -1899,7 +1899,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":212,
       "fields":{
          "path":222,
@@ -1908,7 +1908,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":213,
       "fields":{
          "path":222,
@@ -1917,7 +1917,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":214,
       "fields":{
          "path":222,
@@ -1926,7 +1926,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":215,
       "fields":{
          "path":222,
@@ -1935,7 +1935,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":216,
       "fields":{
          "path":222,
@@ -1944,7 +1944,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":217,
       "fields":{
          "path":222,
@@ -1953,7 +1953,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":218,
       "fields":{
          "path":222,
@@ -1962,7 +1962,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":219,
       "fields":{
          "path":222,
@@ -1971,7 +1971,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":220,
       "fields":{
          "path":213,
@@ -1980,7 +1980,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":221,
       "fields":{
          "path":229,
@@ -1989,7 +1989,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":222,
       "fields":{
          "path":229,
@@ -1998,7 +1998,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":223,
       "fields":{
          "path":229,
@@ -2007,7 +2007,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":224,
       "fields":{
          "path":229,
@@ -2016,7 +2016,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":225,
       "fields":{
          "path":229,
@@ -2025,7 +2025,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":226,
       "fields":{
          "path":229,
@@ -2034,7 +2034,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":227,
       "fields":{
          "path":229,
@@ -2043,7 +2043,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":228,
       "fields":{
          "path":229,
@@ -2052,7 +2052,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":229,
       "fields":{
          "path":229,
@@ -2061,7 +2061,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":230,
       "fields":{
          "path":229,
@@ -2070,7 +2070,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":231,
       "fields":{
          "path":229,
@@ -2079,7 +2079,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":232,
       "fields":{
          "path":229,
@@ -2088,7 +2088,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":233,
       "fields":{
          "path":229,
@@ -2097,7 +2097,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":234,
       "fields":{
          "path":229,
@@ -2106,7 +2106,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":235,
       "fields":{
          "path":3,
@@ -2115,7 +2115,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":236,
       "fields":{
          "path":3,
@@ -2124,7 +2124,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":237,
       "fields":{
          "path":3,
@@ -2133,7 +2133,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":238,
       "fields":{
          "path":3,
@@ -2142,7 +2142,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":239,
       "fields":{
          "path":3,
@@ -2151,7 +2151,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":240,
       "fields":{
          "path":3,
@@ -2160,7 +2160,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":241,
       "fields":{
          "path":3,
@@ -2169,7 +2169,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":242,
       "fields":{
          "path":3,
@@ -2178,7 +2178,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":243,
       "fields":{
          "path":3,
@@ -2187,7 +2187,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":244,
       "fields":{
          "path":3,
@@ -2196,7 +2196,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":245,
       "fields":{
          "path":3,
@@ -2205,7 +2205,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":246,
       "fields":{
          "path":220,
@@ -2214,7 +2214,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":247,
       "fields":{
          "path":220,
@@ -2223,7 +2223,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":248,
       "fields":{
          "path":220,
@@ -2232,7 +2232,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":249,
       "fields":{
          "path":220,
@@ -2241,7 +2241,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":250,
       "fields":{
          "path":220,
@@ -2250,7 +2250,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":251,
       "fields":{
          "path":220,
@@ -2259,7 +2259,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":252,
       "fields":{
          "path":220,
@@ -2268,7 +2268,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":253,
       "fields":{
          "path":220,
@@ -2277,7 +2277,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":254,
       "fields":{
          "path":220,
@@ -2286,7 +2286,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":255,
       "fields":{
          "path":220,
@@ -2295,7 +2295,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":256,
       "fields":{
          "path":220,
@@ -2304,7 +2304,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":257,
       "fields":{
          "path":220,
@@ -2313,7 +2313,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":258,
       "fields":{
          "path":220,
@@ -2322,7 +2322,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":259,
       "fields":{
          "path":220,
@@ -2331,7 +2331,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":260,
       "fields":{
          "path":220,
@@ -2340,7 +2340,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":261,
       "fields":{
          "path":220,
@@ -2349,7 +2349,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":262,
       "fields":{
          "path":220,
@@ -2358,7 +2358,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":263,
       "fields":{
          "path":220,
@@ -2367,7 +2367,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":264,
       "fields":{
          "path":220,
@@ -2376,7 +2376,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":265,
       "fields":{
          "path":220,
@@ -2385,7 +2385,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":266,
       "fields":{
          "path":220,
@@ -2394,7 +2394,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":267,
       "fields":{
          "path":227,
@@ -2403,7 +2403,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":268,
       "fields":{
          "path":227,
@@ -2412,7 +2412,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":269,
       "fields":{
          "path":227,
@@ -2421,7 +2421,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":270,
       "fields":{
          "path":227,
@@ -2430,7 +2430,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":271,
       "fields":{
          "path":227,
@@ -2439,7 +2439,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":272,
       "fields":{
          "path":227,
@@ -2448,7 +2448,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":273,
       "fields":{
          "path":227,
@@ -2457,7 +2457,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":274,
       "fields":{
          "path":227,
@@ -2466,7 +2466,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":275,
       "fields":{
          "path":227,
@@ -2475,7 +2475,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":276,
       "fields":{
          "path":227,
@@ -2484,7 +2484,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":277,
       "fields":{
          "path":227,
@@ -2493,7 +2493,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":278,
       "fields":{
          "path":227,
@@ -2502,7 +2502,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":279,
       "fields":{
          "path":227,
@@ -2511,7 +2511,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":280,
       "fields":{
          "path":227,
@@ -2520,7 +2520,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":281,
       "fields":{
          "path":227,
@@ -2529,7 +2529,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":282,
       "fields":{
          "path":227,
@@ -2538,7 +2538,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":283,
       "fields":{
          "path":227,
@@ -2547,7 +2547,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":284,
       "fields":{
          "path":227,
@@ -2556,7 +2556,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":285,
       "fields":{
          "path":1,
@@ -2565,7 +2565,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":286,
       "fields":{
          "path":1,
@@ -2574,7 +2574,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":287,
       "fields":{
          "path":1,
@@ -2583,7 +2583,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":288,
       "fields":{
          "path":1,
@@ -2592,7 +2592,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":289,
       "fields":{
          "path":1,
@@ -2601,7 +2601,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":290,
       "fields":{
          "path":1,
@@ -2610,7 +2610,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":291,
       "fields":{
          "path":1,
@@ -2619,7 +2619,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":292,
       "fields":{
          "path":1,
@@ -2628,7 +2628,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":293,
       "fields":{
          "path":1,
@@ -2637,7 +2637,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":294,
       "fields":{
          "path":1,
@@ -2646,7 +2646,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":295,
       "fields":{
          "path":1,
@@ -2655,7 +2655,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":296,
       "fields":{
          "path":1,
@@ -2664,7 +2664,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":297,
       "fields":{
          "path":218,
@@ -2673,7 +2673,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":298,
       "fields":{
          "path":218,
@@ -2682,7 +2682,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":299,
       "fields":{
          "path":218,
@@ -2691,7 +2691,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":300,
       "fields":{
          "path":218,
@@ -2700,7 +2700,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":301,
       "fields":{
          "path":218,
@@ -2709,7 +2709,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":302,
       "fields":{
          "path":218,
@@ -2718,7 +2718,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":303,
       "fields":{
          "path":218,
@@ -2727,7 +2727,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":304,
       "fields":{
          "path":218,
@@ -2736,7 +2736,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":305,
       "fields":{
          "path":218,
@@ -2745,7 +2745,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":306,
       "fields":{
          "path":218,
@@ -2754,7 +2754,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":307,
       "fields":{
          "path":218,
@@ -2763,7 +2763,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":308,
       "fields":{
          "path":218,
@@ -2772,7 +2772,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":309,
       "fields":{
          "path":218,
@@ -2781,7 +2781,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":310,
       "fields":{
          "path":218,
@@ -2790,7 +2790,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":311,
       "fields":{
          "path":218,
@@ -2799,7 +2799,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":312,
       "fields":{
          "path":218,
@@ -2808,7 +2808,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":313,
       "fields":{
          "path":225,
@@ -2817,7 +2817,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":314,
       "fields":{
          "path":225,
@@ -2826,7 +2826,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":315,
       "fields":{
          "path":225,
@@ -2835,7 +2835,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":316,
       "fields":{
          "path":225,
@@ -2844,7 +2844,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":317,
       "fields":{
          "path":225,
@@ -2853,7 +2853,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":318,
       "fields":{
          "path":225,
@@ -2862,7 +2862,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":319,
       "fields":{
          "path":225,
@@ -2871,7 +2871,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":320,
       "fields":{
          "path":225,
@@ -2880,7 +2880,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":321,
       "fields":{
          "path":225,
@@ -2889,7 +2889,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":322,
       "fields":{
          "path":225,
@@ -2898,7 +2898,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":323,
       "fields":{
          "path":225,
@@ -2907,7 +2907,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":324,
       "fields":{
          "path":225,
@@ -2916,7 +2916,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":325,
       "fields":{
          "path":225,
@@ -2925,7 +2925,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":326,
       "fields":{
          "path":225,
@@ -2934,7 +2934,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":327,
       "fields":{
          "path":225,
@@ -2943,7 +2943,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":328,
       "fields":{
          "path":225,
@@ -2952,7 +2952,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":329,
       "fields":{
          "path":225,
@@ -2961,7 +2961,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":330,
       "fields":{
          "path":225,
@@ -2970,7 +2970,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":331,
       "fields":{
          "path":225,
@@ -2979,7 +2979,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":332,
       "fields":{
          "path":225,
@@ -2988,7 +2988,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":333,
       "fields":{
          "path":225,
@@ -2997,7 +2997,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":334,
       "fields":{
          "path":225,
@@ -3006,7 +3006,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":335,
       "fields":{
          "path":216,
@@ -3015,7 +3015,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":336,
       "fields":{
          "path":216,
@@ -3024,7 +3024,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":337,
       "fields":{
          "path":216,
@@ -3033,7 +3033,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":338,
       "fields":{
          "path":216,
@@ -3042,7 +3042,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":339,
       "fields":{
          "path":216,
@@ -3051,7 +3051,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":340,
       "fields":{
          "path":216,
@@ -3060,7 +3060,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":341,
       "fields":{
          "path":216,
@@ -3069,7 +3069,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":342,
       "fields":{
          "path":216,
@@ -3078,7 +3078,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":343,
       "fields":{
          "path":216,
@@ -3087,7 +3087,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":344,
       "fields":{
          "path":216,
@@ -3096,7 +3096,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":345,
       "fields":{
          "path":216,
@@ -3105,7 +3105,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":346,
       "fields":{
          "path":216,
@@ -3114,7 +3114,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":347,
       "fields":{
          "path":216,
@@ -3123,7 +3123,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":348,
       "fields":{
          "path":216,
@@ -3132,7 +3132,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":349,
       "fields":{
          "path":232,
@@ -3141,7 +3141,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":350,
       "fields":{
          "path":232,
@@ -3150,7 +3150,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":351,
       "fields":{
          "path":232,
@@ -3159,7 +3159,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":352,
       "fields":{
          "path":232,
@@ -3168,7 +3168,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":353,
       "fields":{
          "path":232,
@@ -3177,7 +3177,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":354,
       "fields":{
          "path":232,
@@ -3186,7 +3186,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":355,
       "fields":{
          "path":232,
@@ -3195,7 +3195,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":356,
       "fields":{
          "path":232,
@@ -3204,7 +3204,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":357,
       "fields":{
          "path":232,
@@ -3213,7 +3213,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":358,
       "fields":{
          "path":232,
@@ -3222,7 +3222,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":359,
       "fields":{
          "path":232,
@@ -3231,7 +3231,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":360,
       "fields":{
          "path":232,
@@ -3240,7 +3240,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":361,
       "fields":{
          "path":232,
@@ -3249,7 +3249,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":362,
       "fields":{
          "path":232,
@@ -3258,7 +3258,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":363,
       "fields":{
          "path":6,
@@ -3267,7 +3267,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":364,
       "fields":{
          "path":6,
@@ -3276,7 +3276,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":365,
       "fields":{
          "path":6,
@@ -3285,7 +3285,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":366,
       "fields":{
          "path":6,
@@ -3294,7 +3294,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":367,
       "fields":{
          "path":223,
@@ -3303,7 +3303,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":368,
       "fields":{
          "path":223,
@@ -3312,7 +3312,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":369,
       "fields":{
          "path":223,
@@ -3321,7 +3321,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":370,
       "fields":{
          "path":223,
@@ -3330,7 +3330,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":371,
       "fields":{
          "path":223,
@@ -3339,7 +3339,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":372,
       "fields":{
          "path":223,
@@ -3348,7 +3348,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":373,
       "fields":{
          "path":223,
@@ -3357,7 +3357,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":374,
       "fields":{
          "path":223,
@@ -3366,7 +3366,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":375,
       "fields":{
          "path":223,
@@ -3375,7 +3375,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":376,
       "fields":{
          "path":223,
@@ -3384,7 +3384,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":377,
       "fields":{
          "path":223,
@@ -3393,7 +3393,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":378,
       "fields":{
          "path":223,
@@ -3402,7 +3402,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":379,
       "fields":{
          "path":223,
@@ -3411,7 +3411,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":380,
       "fields":{
          "path":223,
@@ -3420,7 +3420,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":381,
       "fields":{
          "path":223,
@@ -3429,7 +3429,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":382,
       "fields":{
          "path":223,
@@ -3438,7 +3438,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":383,
       "fields":{
          "path":223,
@@ -3447,7 +3447,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":384,
       "fields":{
          "path":223,
@@ -3456,7 +3456,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":385,
       "fields":{
          "path":223,
@@ -3465,7 +3465,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":386,
       "fields":{
          "path":223,
@@ -3474,7 +3474,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":387,
       "fields":{
          "path":223,
@@ -3483,7 +3483,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":388,
       "fields":{
          "path":223,
@@ -3492,7 +3492,7 @@
       }
    },
    {
-      "model":"landsat_uploader.landsatgrade",
+      "model":"imagery.landsatgrade",
       "pk":389,
       "fields":{
          "path":223,
